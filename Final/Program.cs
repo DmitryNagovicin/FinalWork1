@@ -29,4 +29,21 @@ void PrintArray(string[] array)                              //Вывод мас
     System.Console.WriteLine();
 }
 
+string[] CheckLength(string[] array)                          // Формирование нового массива с элементами короче 3х символов
+{
+    int lenElement = 4;
+    int position = 0;
+    int len = array.Length;
+    string[] massiv = new string[len];
+    for (int i = 0; i < len; i++)
+    {
+        if(array[i].Length < lenElement)
+        {
+            massiv[position] = array[i];
+            position++;
+        }
+    }
+    return massiv;
+}
+
 
