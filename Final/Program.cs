@@ -20,3 +20,13 @@ string[] CreateArray(int length)                            // Создание 
     return massiv;
 }
 
+void PrintArray(string[] array)                              //Вывод массива
+{
+    for ( int i = 0; i < array.Length; i++)
+    {
+        System.Console.Write($"{array[i]}\t");
+    }
+    System.Console.WriteLine();
+}
+
+
