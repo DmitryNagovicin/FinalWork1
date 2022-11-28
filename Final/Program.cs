@@ -46,4 +46,12 @@ string[] CheckLength(string[] array)                          // Формиро�
     return massiv;
 }
 
-
+int number = Prompt("Введите количество элементов массива строк : ");
+string[] mas = CreateArray(number);
+System.Console.WriteLine();
+System.Console.Write("Вы ввели следующий массив: ");
+PrintArray(mas);
+System.Console.WriteLine(); 
+string[] mas2 = CheckLength(mas);
+System.Console.Write("Итоговый массив: ");
+PrintArray(mas2);
